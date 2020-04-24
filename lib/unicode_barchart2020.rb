@@ -7,12 +7,12 @@ require 'barcharts'
 class UnicodeBarchart2020
 
   def initialize(data, debug: false)
-    @data = data
+    @data, @debug = data, debug
   end
 
-  def build(sort: false)
+  def build(sort: false, chars: nil)
 
-    lines = barchart( @data, title: '', sort: sort).lines
+    lines = barchart( @data, title: '', sort: sort, chars: chars).lines
     puts 'lines: ' + lines.inspect if @debug
     a = @data.to_a
     bars = lines[2..-1].map {|x| x[/(?<=\| )[^ ]+/]}

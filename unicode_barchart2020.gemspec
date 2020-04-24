@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'unicode_barchart2020'
-  s.version = '0.1.0'
+  s.version = '0.1.1'
   s.summary = 'A wrapper for the terminal based gem *barcharts* to make it more customisable.'
   s.authors = ['James Robertson']
   s.files = Dir['lib/unicode_barchart2020.rb']
